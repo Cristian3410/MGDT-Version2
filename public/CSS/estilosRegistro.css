@@ -1,0 +1,52 @@
+body{
+    background:linear-gradient(rgba(5, 7, 12, 0.466),rgba(5, 7, 12, 0.466)),
+    url('img7.jpg') no-repeat center;
+     margin: auto;
+     background-size: cover;
+     text-align: center;
+     display:flex;
+     justify-content: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.login-div{
+    display: flex;
+    background-color: white;
+    height: 550px;
+    width: 500px;
+    flex-direction: column;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+  margin-top: 10px;
+  border: 1px solid #ced4da;
+  height: 30px;
+  box-sizing:border-box;
+  width: 50%;
+
+}
+
+.btn-registro{
+    height: 30px;
+    background-color: rgb(195, 152, 235);
+    border-style: none;
+    color: #ffffff;
+    width: 200px;
+    margin-top: 20px;
+}
+
+
+.btn-registro:hover{
+    color:#fff;
+    background-color:#61428f;
+    border-color:#61428f
+}

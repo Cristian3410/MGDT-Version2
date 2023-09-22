@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/CSS/estilosRegistro.css">
+    <title>registro</title>
+</head>
+<body>
+    <div class="login-div">
+        <h2>Registrarse</h2>
+
+    <form action="registro" method="POST" class="login-form">
+        <label for="id">Ingrese su usuario</label>
+        <input type="text" name="id" required>
+        <label for="password">ingrese su contraseña</label>
+        <input type="password" name="password" required>
+        <label for="edad">ingrese su edad</label>
+        <input type="text" name="edad" required>
+        <label for="email">ingrese su correo corporativo</label>
+        <input type="email" name="email" required>
+        <label for=cargo">ingrese su Cargo</label>
+        <input type="text" name="cargo" required>
+        <label for=super">ingrese su supervisor encargado</label>
+        <input type="text" name="super" required>
+        <label for=NameApp">ingrese sus nombres y apellidos</label>
+        <input type="text" name="NameApp" required>
+        <input type="submit" class="btn-registro" value="registrar">
+        <a href=""></a>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") {%>
+        <script>
+            Swal.fire({
+             title:'<%= alertTitle%>',
+             text: '<%= alertMessage %>',
+             icon: '<%=alertIcon%>',
+             showConfirmButtoon: <%=showConfirmButton %>,
+             timer:<%=timer %>
+
+            }).then(()=>{
+                window.location='/ <%= ruta %>'
+            })
+        </script>
+        <% } %>
+</body>
+</html>
